@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: 'Proxima Nova';
+      font-weight: 400;
+      src: url(/public/fonts/Proxima_Nova.ttf) format("truetype");
+    }
+    html {
+      @apply font-proxima;
+    }
+    body {
+      @apply font-proxima;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply font-proxima;
+    }
+  }
